@@ -6,7 +6,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  
   "author": "",
   "license": "ISC",
   "description": "",
@@ -14,6 +13,7 @@
     "@turf/nearest-point-on-line": "^7.2.0",
     "@turf/turf": "^7.2.0",
     "cors": "^2.8.5",
+    "express": "^5.1.0",
     "shapefile": "^0.6.6",
     "turf": "^3.0.14"
   }
