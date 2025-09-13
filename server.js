@@ -13,6 +13,7 @@ app.use(cors({
 
 app.get("/nearest-coast", (req, res) => {
   const { lat, lon } = req.query;
+  console.log("incoming request", lat, lon);
   if (!lat || !lon) {
     return res.status(400).json({ error: "lat and lon required" });
   }
