@@ -61,8 +61,8 @@ export function getNearestCoastline(lat, lon) {
   }
 
   return {
-    lat: nearestPoint.geometry.coordinates[1],
-    lon: nearestPoint.geometry.coordinates[0],
+    coastLat: nearestPoint.geometry.coordinates[1],
+    coastLon: nearestPoint.geometry.coordinates[0],
     distance_km: minDistance,
   };
 }
