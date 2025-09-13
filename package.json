@@ -1,0 +1,18 @@
+{
+  "name": "backd",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@turf/nearest-point-on-line": "^7.2.0",
+    "@turf/turf": "^7.2.0",
+    "shapefile": "^0.6.6",
+    "turf": "^3.0.14"
+  }
+}
