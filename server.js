@@ -5,7 +5,11 @@ const { getNearestCoastline, wave } = require("./logic.js");
 const app = express();
 const PORT = 3000;
 
-app.use(cors());
+app.use(cors({
+  origin: "https://fr-cyan.vercel.app",
+  methods: ["GET", "POST", "OPTIONS"]
+}));
+
 
 app.get("/nearest-coast", async (req, res) => {
   console.log(req.query);
