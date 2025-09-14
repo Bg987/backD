@@ -15,6 +15,7 @@ app.get("/nearest-coast", async (req, res) => {
   }
   const coastCoordinates = await getNearestCoastline(parseFloat(lat), parseFloat(lon));
   const TideData = await wave(coastCoordinates.coastLat, coastCoordinates.coastLon);
+  console.log(coastCoordinates, TideData);
   res.json({ coastCoordinates, TideData });
 });
 
